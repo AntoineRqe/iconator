@@ -3,9 +3,17 @@ name = "searchinator"
 version = "0.1.0"
 edition = "2024"
 
+[[bin]]
+name = "searchinator"
+path = "src/main.rs"
+
 [dependencies]
+axum = "0.8.9"
+tokio = { version = "1.52.3", features = ["full"] }
 fst = "0.4.7"
 lazy_static = "1.5.0"
+tracing = "0.1.44"
+tracing-subscriber = "0.3.23"
 
 [build-dependencies]
 fst = "0.4.7"
